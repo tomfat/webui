@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://61.132.39.10:8081/index -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>order</title>
+
+    <link rel="icon" href="http://61.132.39.10:8081/favicon.ico">
+    <link rel="shortcut icon" href="http://61.132.39.10:8081/favicon.ico">
+    <link rel="bookmark" href="http://61.132.39.10:8081/favicon.ico">
+
+    <link rel="stylesheet" href="./order_files/bootstrap.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand" href="http://61.132.39.10:8081/index">资产订单系统(消费者端)</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                <a href="http://61.132.39.10:8081/RegisterInfo/create">注册 <span class="sr-only">(current)</span></a>
+                </li>
+                <li><a href="http://61.132.39.10:8081/account/customer/login.html">登录</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://61.132.39.10:8081/OfflineRecharge/create">充值</a></li>
+                <li><a href="http://61.132.39.10:8081/AssetsItem/create">报单</a></li>
+                <li><a href="http://61.132.39.10:8081/index#">帐户信息</a></li>
+            </ul>
+        </div>
+    </div>
+</nav><div style="border-bottom:#ddd 1px solid; margin-bottom: 0.6em">
+    <div class="container">
+<a href="http://61.132.39.10:8081/index"><img src="./order_files/logo.gif"></a>    </div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-md-4">
+        <div class="well">
+            <div>
+                个人信息：
+                <a href="http://61.132.39.10:8081/account/customer/view.html"><strong>zhang3</strong></a>您好！
+            </div>
+            <div>
+                用户手机：<strong>18952786396</strong>
+            </div>
+            <div>
+                通信地址：
+            </div>
+            <div>上次登录时间：
+            Apr 25, 2016 1:58:46 PM
+            </div>
+            <div style="height: 1em;">&nbsp;</div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title">余额帐号</h3>
+            </div>
+            <div class="panel-body">
+                目前剩余金额：<strong style="font-size: 1.2em">-100000</strong> 元
+
+                <a href="http://61.132.39.10:8081/Bill?type=offlineRecharge&amp;type=onlineRecharge&amp;type=assetsItem">查看</a>
+            </div>
+            <div class="panel-footer">
+                <a href="http://61.132.39.10:8081/OfflineRecharge/create">[线下充值]</a>
+                <a href="http://61.132.39.10:8081/OnlineRecharge/create">[网银充值]</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="alert alert-info" role="alert">
+            <span>商城积分：</span><strong>45000</strong>分
+            <a href="http://61.132.39.10:8081/Bill?type=shoppingPointBonus">查看</a>
+        </div>
+
+        <div class="alert alert-success" role="alert">
+            <span>银行卡号：</span>
+            <strong>5023 2302 *** 315</strong>
+            <a href="http://61.132.39.10:8081/Bill?type=assetsItemCashOut&amp;type=dividendCashOut">查看</a>
+        </div>
+    </div>
+</div>
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <p class="pull-right text-danger"><span>分红余额</span><strong style="font-size: 1.2em">32</strong> 元
+
+            /<span>可提现余额</span><strong style="font-size: 1.2em">-61800</strong> 元
+</p>
+        <h3 class="panel-title">资产帐号</h3>
+    </div>
+    <!-- Table -->
+    <table class="table">
+        <thead>
+        <tr>
+            <th>订单号</th>
+            <th>审核通过时间</th>
+            <th>金额</th>
+            <th>状态</th>
+            <th>已分红总额</th>
+            <th>本次分红</th>
+            <th>下次分红时间</th>
+        </tr>
+        </thead>
+        <tbody>
+
+                <tr class="info">
+                    <td><a href="http://61.132.39.10:8081/AssetsItem/7e3899f5-6182-44ce-98c4-bd34adfaf151"><code>bd34adfaf151</code>
+</a></td>
+                    <td>Apr 25, 2016 5:35:18 PM</td>
+                    <td><strong style="font-size: 1.2em">45000</strong> 元
+</td>
+                    <td>
+分红中                    </td>
+                    <td>0元</td>
+                    <td></td>
+                    <td>
+                    </td>
+                </tr>
+                <tr class="">
+                    <td><a href="http://61.132.39.10:8081/AssetsItem/a121c3c1-bf26-42eb-9062-fc9f7e90dd1a"><code>fc9f7e90dd1a</code>
+</a></td>
+                    <td>Apr 25, 2016 5:31:10 PM</td>
+                    <td><strong style="font-size: 1.2em">30000</strong> 元
+</td>
+                    <td>
+分红结束                    </td>
+                    <td>0元</td>
+                    <td></td>
+                    <td>
+                    </td>
+                </tr>
+                <tr class="">
+                    <td><a href="http://61.132.39.10:8081/AssetsItem/716db6b0-ecd8-4d3e-a481-19eb50dd2b2b"><code>19eb50dd2b2b</code>
+</a></td>
+                    <td></td>
+                    <td><strong style="font-size: 1.2em">15000</strong> 元
+</td>
+                    <td>
+分红结束                    </td>
+                    <td>0元</td>
+                    <td></td>
+                    <td>
+                    </td>
+                </tr>
+                <tr class="">
+                    <td><a href="http://61.132.39.10:8081/AssetsItem/d470f86d-296b-4a84-92cd-47759c8aae84"><code>47759c8aae84</code>
+</a></td>
+                    <td></td>
+                    <td><strong style="font-size: 1.2em">15000</strong> 元
+</td>
+                    <td>
+分红结束                    </td>
+                    <td>0元</td>
+                    <td></td>
+                    <td>
+                    </td>
+                </tr>
+                <tr class="">
+                    <td><a href="http://61.132.39.10:8081/AssetsItem/2d1e70b1-2d06-41ae-b3bd-a744b3ef8454"><code>a744b3ef8454</code>
+</a></td>
+                    <td></td>
+                    <td><strong style="font-size: 1.2em">15000</strong> 元
+</td>
+                    <td>
+分红未开始                    </td>
+                    <td>0元</td>
+                    <td></td>
+                    <td>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+    <div class="panel-footer">
+        <a href="http://61.132.39.10:8081/Bill?type=assetsItem">分红报单</a>
+        <strong>1</strong> 笔，
+        <a href="http://61.132.39.10:8081/Bill?type=assetsItem">全部报单</a>
+        <strong>5</strong> 笔
+
+        <a class="btn btn-primary" href="http://61.132.39.10:8081/AssetsItem/create">[报单]</a>
+        <a class="btn btn-success" href="http://61.132.39.10:8081/DividendCashOut/create">[分红提现/转账]</a>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h3 class="panel-title">消费明细</h3></div>
+    <div class="panel-body">
+        <ul class="list-inline">
+            <li><a href="http://61.132.39.10:8081/Bill?type=offlineRecharge">线下充值</a></li>
+            <li><a href="http://61.132.39.10:8081/Bill?type=onlineRecharge">网银充值</a></li>
+            <li><a href="http://61.132.39.10:8081/Bill?type=assetsItem">资产报单</a></li>
+            <li><a href="http://61.132.39.10:8081/Bill?type=shoppingPointBonus">商城积分奖励</a></li>
+            <li><a href="http://61.132.39.10:8081/Bill?type=dividend">资产分红</a></li>
+            <li><a href="http://61.132.39.10:8081/Bill?type=dividendCashOut">分红提现</a></li>
+            <li><a href="http://61.132.39.10:8081/Bill?type=dividend2BalanceTransfer">分红转入余额</a></li>
+            <li><a href="http://61.132.39.10:8081/Bill?type=assetsItemCashOut">本金提现</a></li>
+        </ul>
+    </div>
+<table class="table">
+    <thead>
+    <tr>
+        <th>分类</th>
+        <th>创建时间</th>
+        <th>名称</th>
+        <th>金额</th>
+        <th>状态</th>
+        <th>交易号</th>
+    </tr>
+    </thead>
+<tbody>
+    <tr>
+        <td>线下充值</td>
+        <td>Apr 27, 2016 10:11:33 AM</td>
+        <td>线下对余额账户的充值</td>
+        <td>元</td>
+        <td>
+            <span>等待审核</span>
+        </td>
+        <td>
+<a href="http://61.132.39.10:8081/OfflineRecharge/ecb6ac59-c09e-48c0-a25d-ac9d4b7e7bcb"><code>ac9d4b7e7bcb</code>
+</a>        </td>
+    </tr>
+    <tr>
+        <td>本金提现</td>
+        <td>Apr 25, 2016 7:23:30 PM</td>
+        <td>对报单a121c3c1-bf26-42eb-9062-fc9f7e90dd1a的本金提现</td>
+        <td>30000元</td>
+        <td>
+            <span>交易成功</span>
+        </td>
+        <td>
+<a href="http://61.132.39.10:8081/AssetsItemCashOut/16d1ee5a-9018-4059-b8e0-44fe1bbb095a"><code>44fe1bbb095a</code>
+</a>        </td>
+    </tr>
+    <tr>
+        <td>商城积分奖励</td>
+        <td>Apr 25, 2016 5:35:18 PM</td>
+        <td>报单7e3899f5-6182-44ce-98c4-bd34adfaf151的商城积分</td>
+        <td>45000</td>
+        <td>
+            <span>交易成功</span>
+        </td>
+        <td>
+<a href="http://61.132.39.10:8081/ShoppingPointBonus/7616aeed-7a4a-4cda-aa25-76c2f2602bf0"><code>76c2f2602bf0</code>
+</a>        </td>
+    </tr>
+    <tr>
+        <td>资产报单</td>
+        <td>Apr 25, 2016 5:35:14 PM</td>
+        <td>资产报单</td>
+        <td>45000元</td>
+        <td>
+            <span>交易成功</span>
+        </td>
+        <td>
+<a href="http://61.132.39.10:8081/AssetsItem/7e3899f5-6182-44ce-98c4-bd34adfaf151"><code>bd34adfaf151</code>
+</a>        </td>
+    </tr>
+    <tr>
+        <td>商城积分奖励</td>
+        <td>Apr 25, 2016 5:31:10 PM</td>
+        <td>报单a121c3c1-bf26-42eb-9062-fc9f7e90dd1a的商城积分</td>
+        <td>60000</td>
+        <td>
+            <span>交易成功</span>
+        </td>
+        <td>
+<a href="http://61.132.39.10:8081/ShoppingPointBonus/d457f06e-f34b-4536-954c-1506ee778f01"><code>1506ee778f01</code>
+</a>        </td>
+    </tr>
+    <tr>
+        <td>资产报单</td>
+        <td>Apr 25, 2016 5:31:05 PM</td>
+        <td>资产报单</td>
+        <td>30000元</td>
+        <td>
+            <span>交易成功</span>
+        </td>
+        <td>
+<a href="http://61.132.39.10:8081/AssetsItem/a121c3c1-bf26-42eb-9062-fc9f7e90dd1a"><code>fc9f7e90dd1a</code>
+</a>        </td>
+    </tr>
+    <tr>
+        <td>本金提现</td>
+        <td>Apr 25, 2016 5:04:29 PM</td>
+        <td>对报单d470f86d-296b-4a84-92cd-47759c8aae84的本金提现</td>
+        <td>15000元</td>
+        <td>
+            <span>交易成功</span>
+        </td>
+        <td>
+<a href="http://61.132.39.10:8081/AssetsItemCashOut/9243e9a3-0171-419a-b438-d4888054c41c"><code>d4888054c41c</code>
+</a>        </td>
+    </tr>
+    <tr>
+        <td>本金提现</td>
+        <td>Apr 25, 2016 4:47:45 PM</td>
+        <td>对报单716db6b0-ecd8-4d3e-a481-19eb50dd2b2b的本金提现</td>
+        <td>15000元</td>
+        <td>
+            <span>交易成功</span>
+        </td>
+        <td>
+<a href="http://61.132.39.10:8081/AssetsItemCashOut/e8f96cae-b6ea-43f9-9097-9e63fb16ef3d"><code>9e63fb16ef3d</code>
+</a>        </td>
+    </tr>
+    <tr>
+        <td>分红提现</td>
+        <td>Apr 25, 2016 4:22:59 PM</td>
+        <td>分红提现</td>
+        <td>600元</td>
+        <td>
+            <span>交易成功</span>
+        </td>
+        <td>
+<a href="http://61.132.39.10:8081/DividendCashOut/e79294bc-01a5-4c5b-992f-5edd0188d7d0"><code>5edd0188d7d0</code>
+</a>        </td>
+    </tr>
+    <tr>
+        <td>资产分红</td>
+        <td>Apr 25, 2016 3:56:47 PM</td>
+        <td>2016年8月对资产订单的分红</td>
+        <td>666元</td>
+        <td>
+            <span>交易成功</span>
+        </td>
+        <td>
+<a href="http://61.132.39.10:8081/Dividend/da6b622b-b322-4a8f-a686-f838275fdc81"><code>f838275fdc81</code>
+</a>        </td>
+    </tr>
+</tbody>
+</table>
+    <div class="panel-footer"><a href="http://61.132.39.10:8081/Bill">全部交易记录</a></div>
+</div>
+</div>
+<hr>
+<footer>
+    <div class="text-center">
+        <ul class="list-inline">
+            <li><a href="http://www.bycytz.com/">扬州宝缘创意投资有限公司</a></li>
+            <li><a href="http://61.132.39.10:8081/home/customer/index.html">消费者系统</a></li>
+            <li><a href="http://61.132.39.10:8081/home/serverpoint/index.html">服务点系统</a></li>
+            <li><a href="http://61.132.39.10:8081/home/manager/index.html">管理员</a></li>
+        </ul>
+    </div>
+</footer><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./order_files/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./order_files/bootstrap.min.js"></script>
+
+
+</body></html>
